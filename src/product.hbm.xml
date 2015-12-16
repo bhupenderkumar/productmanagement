@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.xch.vo.Product" table="product">
+		<id name="pid" column="pid" type="int">
+			<generator class="assigned" />
+		</id>
+		<property name="pname" column="pname" length="45" />
+		<property name="price" column="price" type="double" />
+		<property name="cat" column="category" length="45" />
+		<property name="pimg" column="pimg" length="45" />
+	</class>
+</hibernate-mapping>
